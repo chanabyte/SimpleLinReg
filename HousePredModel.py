@@ -6,7 +6,7 @@ import plotly.express as px
 def gen_house_data(n_samples=100):
     np.random.seed(50)
     size = np.random.normal(1800, 200, n_samples)
-    price = size * 50 + np.random.normal(0, 500, n_samples)
+    price = size * 100 + np.random.normal(0, 500, n_samples)
     return pd.DataFrame({'size': size, 'price': price})
 
 from sklearn.model_selection import train_test_split
